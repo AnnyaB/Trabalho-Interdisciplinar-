@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Lumos Arte - Cadastro</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estiloform.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <form action="cadastro" id="cadastro">
+            <fieldset>
+                <legend class="principal">- Cadastre-se -</legend>
+                    <div class="dados">
+                        <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label>Primeiro Nome</label>
+                        <input type="text" placeholder="digite o seu primeiro nome" id="nome1" required>
+                        <label>Ultimo Nome</label>
+                        <input type="text" placeholder="digite o seu último nome" id="nome2" required>
+                        <label>Data de Nascimento</label>
+                        <input type="date" id="data" required>
+                    </fieldset>
+                    </div>
+                    <div class="dados">
+                        <fieldset>
+                        <legend>Contato</legend>
+                        <label>E-mail</label>
+                        <input type="email" placeholder="digite o seu e-mail" id="email" required>
+                        <label>Telefone</label>
+                        <input type="number" placeholder="digite o seu telefone principal" id="tel" required>
+                    </fieldset>
+                </div>
+                    <div class="dados">
+                    <fieldset>
+                        <legend>Detalhes do Usuário</legend>
+                        <label>Nome Usuário</label>
+                        <input type="text" id="nomeU" placeholder="digite o nome de usuário" required>
+                        <label>Senha</label>
+                        <input type="password" id="senha" placeholder="digite uma senha" required>
+                    </fieldset>
+                    </div>
+                    <input type="checkbox" id="euLi" required> 
+                    <label>Eu li e aceito todos os termos de usuário</label>
+                    <div class="confirma">
+                        <a href="home.html" class="botaoA">Página Inicial</a>
+                        <button type="reset">Resetar</button>
+                        <button type="button" onclick="return cadastrar()">Confirmar</button>
+                    </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

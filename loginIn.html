@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>ILumos Arte - LoginIn</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estiloform.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <form action="cadastro" id="cadastro">
+            <fieldset>
+                <legend class="principal">- Entre -</legend>
+                <div class="dados">
+                    <fieldset>
+                        <label>E-mail</label>
+                        <input type="email" placeholder="digite o seu e-mail" id="email4" required>
+                        <label>Senha</label>
+                        <input type="password" id="senha2" placeholder="digite uma senha" required>
+
+                        <a href="esqueciSenha.html" class="botaoB">Esqueci a senha</a>
+                        
+                        
+                        <button type="button" onclick="entrarSite()" class="btn btn-outline-dark btn-sm btn-block">Confirmar</button>
+                        <a href="cadastro.html" class="btn btn-outline-dark btn-sm btn-block">Não tenho Conta</a>
+                    </fieldset>
+                </div>
+                <div class="confirma">              
+                    <a href="home.html" class="botaoA">Página Inicial</a>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

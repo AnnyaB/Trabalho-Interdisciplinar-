@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumos Arte - Postagens</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.2/assets/css/docs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="home.html">
+            <img src="Images/2.png" alt="Logo da LumosArte" id="logo">
+        </a>
+        <div class="action">
+            <div class="profile" onclick="menuToggle();">
+                <img src="https://i.pinimg.com/originals/e9/0b/01/e90b01a1e959addbfed21354a5f98834.jpg" alt="usuário">
+            </div>
+            <div class="menu">
+                <p>Nome nome nome<br>
+                    <span>Artista local</span>
+                </p>
+                <ul>
+                    <li>
+                        <img src="images/user.png" alt="imagem de perfil">
+                        <a href="perfil.html">Meu perfil</a>
+                    </li>
+                    <li>
+                        <img src="images/edit.png" alt="editar perfil">
+                        <a href="perfilEditar.html">Editar perfil</a>
+                    </li>
+                    <li>
+                        <img src="images/exit.png" alt="sair do perfil">
+                        <a href="sair.html">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="menuIcone">
+        <span class="material-symbols-outlined" onclick="menu()">
+            <i>menu</i>
+        </span>
+        <nav class="menu2">
+            <ul>
+                <li id="item1">
+                    <a href="home.html"> Ínicio </a>
+                </li>
+                <li id="item2" onclick="categoria()"> Categorias
+                    <ul id="sub">
+                        <li id="subItem1">
+                            <a href="pintura.html">Pinturas</a>
+                        </li>
+                        <li id="subItem2">
+                            <a href="costura.html">Costura Geral</a>
+                        </li>
+                        <li id="subItem3">
+                            <a href="ceramica.html">Cerâmica</a>
+                        </li>
+                        <li id="subItem4">
+                            <a href="verTudo.html">Ver tudo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="item3">
+                    <a href="foto.html"> Foto </a>
+                </li>
+                <li id="item4">
+                    <a href="video.html"> Vídeo </a>
+                </li>
+                <li id="item5" onclick="rolarPagina(0, 40000)">
+                    Sobre Nós
+                </li>
+                <li id="item6">
+                    <a href="Ajuda.html"> Ajuda </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main class="main">
+        <section class="post">
+            <div>
+                <h1 class="mt-0 mb-0"> Galeria de <a href="perfil.html">Nome Nome</a></h1>
+
+            </div>
+        </section>
+        <section class="content">
+           
+            <div class="gridContainer">
+                <div class="hexagon">
+                    <div class="shape">
+                        <img src="images/artesanato10.png" alt="">
+                        <div class="content">
+                            <div>
+                                <a href="foto1.html">
+                                    <h3>Conteudo 1</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eveniet rerum,
+                                        blanditiis deleniti reiciendis laboriosam explicabo qui numquam alias quaerat
+                                        sit sapiente omnis, quibusdam quisquam, vero cum tempore.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="shape">
+                        <img src="images/artesanato12.png" alt="">
+                        <div class="content">
+                            <div>
+                                <a href="foto2.html">
+                                    <h3>Conteudo 2</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eveniet rerum,
+                                        blanditiis deleniti reiciendis laboriosam explicabo qui numquam alias quaerat
+                                        sit sapiente omnis, quibusdam quisquam, vero cum tempore.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="shape">
+                        <img src="images/artesanato13.png" alt="">
+                        <div class="content">
+                            <div>
+                                <a href="foto3.html">
+                                    <h3>Conteudo 3</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eveniet rerum,
+                                        blanditiis deleniti reiciendis laboriosam explicabo qui numquam alias quaerat
+                                        sit sapiente omnis, quibusdam quisquam, vero cum tempore.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="shape">
+                        <img src="images/artesanato14.png" alt="">
+                        <div class="content">
+                            <div>
+                                <a href="foto4.html">
+                                    <h3>Conteudo 4</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eveniet rerum,
+                                        blanditiis deleniti reiciendis laboriosam explicabo qui numquam alias quaerat
+                                        sit sapiente omnis, quibusdam quisquam, vero cum tempore.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="shape">
+                        <img src="images/artesanato7.png" alt="">
+                        <div class="content">
+                            <div>
+                                <a href="foto5.html">
+                                    <h3>Conteudo 5</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eveniet rerum,
+                                        blanditiis deleniti reiciendis laboriosam explicabo qui numquam alias quaerat
+                                        sit sapiente omnis, quibusdam quisquam, vero cum tempore.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="shape">
+                        <img src="images/artesanato17.png" alt="">
+                        <div class="content">
+                            <div>
+                                <a href="foto6.html">
+                                    <h3>Conteudo 6</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eveniet rerum,
+                                        cupiditate
+                                        blanditiis deleniti reiciendis laboriosam explicabo qui numquam alias quaerat
+                                        quidem
+                                        sit sapiente omnis, quibusdam quisquam, vero cum tempore.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="rodape">
+            <div class="sobre">
+                <h4>Sobre nós</h4>
+                <p>Consequat excepteur laborum veniam sunt occaecat enim enim nisi. Lorem nisi mollit proident anim in
+                    officia voluptate ex veniam. Ut cillum excepteur eiusmod eu. Labore reprehenderit labore qui sit eu
+                    id sit minim culpa cupidatat irure tempor. Ut tempor ad mollit aute.</p>
+                <p>Consequat excepteur laborum veniam sunt occaecat enim enim nisi. Lorem nisi mollit proident anim in
+                    officia voluptate ex veniam. Ut cillum excepteur eiusmod eu. Labore reprehenderit labore qui sit eu
+                    id sit minim culpa cupidatat irure tempor. Ut tempor ad mollit aute.</p>
+                <ul class="sci">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>Links</h4>
+                <ul>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="ajuda.html">Ajuda</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="contato">
+                <h4>Contato</h4>
+                <ul class="info">
+                    <li>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <p> 647 Av. Baldan<br>
+                            Matão, SP 15997-000,<br>
+                            Brasil</p>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <p>
+                            <a href="tel1">(16) 2016-2694</a>
+                            <br>
+                            <a href="tel2">(16) 1234-5678</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <p>
+                            <a href="f297acad@cps.sp.gov.br">f297acad@cps.sp.gov.br</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

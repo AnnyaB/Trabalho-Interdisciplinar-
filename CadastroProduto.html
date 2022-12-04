@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lumos Arte - Cadastro Produto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloform.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="home.html">
+            <img src="Images/2.png" alt="Logo da LumosArte" id="logo">
+        </a>
+    </header>
+    <main>
+        <form action="cadastroP" id="cadastroP">
+            <fieldset>
+                <legend class="principal">- Cadastre Seus Produtos -</legend>
+                <div class="dados">
+                    <fieldset>
+                        <legend>Dados do Produto</legend>
+                        <label>Nome do Produto</label>
+
+                        <input type="text" placeholder="digite o nome do Produto" id="produto" required>
+                        <label>Descrição do Produto</label>
+                        <textarea rows="4" cols="25" class="form-control"></textarea>
+                        <select id="cate" required>
+                            <option value="0">Categorias</option>
+                            <option value="1">Cerâmica</option>
+                            <option value="2">Pintura</option>
+                            <option value="3">Costura</option>
+                        </select>
+                        <label>Fotos e Videos</label>
+                        <input type="file" id="fotoVideo">
+                    </fieldset>
+                </div>
+                <div class="dados">
+                    <fieldset>
+                        <legend>Contato</legend>
+                        <label>Link do Artista</label>
+                        <input type="url" placeholder="informe o jeito dos usuários te encontrarem" id="linkC" required>
+
+                        <input type="checkbox" id="euLi2" required> <label>Eu li e aceito todos os termos de postagem
+                            de produtos.</label>
+                    </fieldset>
+                </div>
+                <div class="confirma">
+                    <a href="home-user.html" class="botaoA">Página Inicial</a>
+                    <a href="perfil.html" class="botaoA">Voltar ao Perfil</a>
+                    <button type="reset">Resetar</button>
+                    <button onclick="return cadastrarProduto()">Confirmar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
